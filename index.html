@@ -1,122 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Page</title>
+    <title>Studio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <nav>
-            <a href="./index.html">WebStudio</a>
             <ul>
-                <li><a href="#home">Studio</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
             </ul>
         </nav>
-        <address>
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+        <p>
+            <a href="mailto:info@example.com">info@example.com</a>
+            <a href="tel:+1234567890">+1 234 567 890</a>
+        </p>
+        <a href="#" class="logo">Studio</a>
     </header>
-
     <main>
-        <section id="home">
-            <h1>Effective Solutions for Your Business</h1>
-            <button type="button">Order Service</button>
-            <img src="images/shadow.jpg" alt="Welcome to Our Studio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            
-            <!-- Added child elements -->
-            <div class="testimonial">
-              <p>"Outstanding service and professionalism!"</p>
-              <cite>John Doe, CEO</cite>
-            </div>
-
-            <ul>
-              <li>Customized Solutions</li>
-              <li>Expert Consultation</li>
-              <li>Global Reach</li>
-            </ul>
-          </section>
-          
-          
-
-        <section id="services">
+        <h1>Welcome to Studio</h1>
+        <section>
             <h2>Our Services</h2>
             <ul>
                 <li>
-                    <h3>Strategy</h3>
-                    <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                    <img src="images/image1.jpg" alt="Service 1" width="200">
+                    <p>Service 1 description</p>
                 </li>
                 <li>
-                    <h3>Punctuality</h3>
-                    <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li>
-                    <h3>Diligence</h3>
-                    <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-                </li>
-                <li>
-                    <h3>Technologies</h3>
-                    <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                    <img src="images/image2.jpg" alt="Service 2" width="200">
+                    <p>Service 2 description</p>
                 </li>
             </ul>
         </section>
-
-        <section id="what-we-do">
-            <h2>What are we doing</h2>
-            <ul>
-                <li>
-                    <img src="./images/img 1.jpg" alt="Image 1" width="360">
-                </li>
-                <li>
-                    <img src="./images/img 2.jpg" alt="Image 2" width="360">
-                </li>
-                <li>
-                    <img src="./images/img 3.jpg" alt="Image 3" width="360">
-                </li>
-            </ul>
-        </section>
-
-        <section id="our-team">
-            <h2>Our Team</h2>
-            <ul>
-                <li>
-                    <img src="./images/img.jpg" alt="Mark Guerrero" width="264">
-                    <h3>Mark Guerrero</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/img (1).jpg" alt="Tom Ford" width="264">
-                    <h3>Tom Ford</h3>
-                    <p>Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/img (2).jpg" alt="Camila Garcia" width="264">
-                    <h3>Camila Garcia</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/img (3).jpg" alt="Daniel Wilson" width="264">
-                    <h3>Daniel Wilson</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
-        </section>
+        <button type="button">Order Service</button>
     </main>
-
     <footer>
-        <a href="./index.html">WebStudio</a>
-        <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        <a href="#" class="logo">Studio</a>
+        <p>&copy; 2024 Studio</p>
     </footer>
 </body>
-
 </html>
 
+styles.css:
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #337ab7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button[type="button"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #23527c;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
